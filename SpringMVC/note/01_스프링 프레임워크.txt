@@ -36,9 +36,12 @@
  	- Maven Dependecies : 이 프로젝트가 의존하고 있는 라이브러리들 (pom.xml)
  	- webapp/resources : 웹 리소스들을 보관하는 곳 (Apache)
  	- webapp/WEB-INF/views : 뷰 페이지(.jsp)들을 보관하는 곳
- 	- webapp/WEB-INF/spring/appServlet/servlet-context.xml :
- 	- webapp/WEB-INF/spring/root-context.xml :
- 	
+ 	- webapp/WEB-INF/spring/appServlet/servlet-context.xml
+ 	 : 스프링 MVC 프로젝트의 프론트 컨트롤러 역할을 하는 DispatcherServlet 클래스 내부에서 활용될
+ 	 초기화 파라미터 값들
+ 	- webapp/WEB-INF/spring/root-context.xml : 프로젝트 내부의 모든 서블릿 및 필터들에서
+ 	가져다 사용할 수 있는 전역 초기화 파라미터들을 설정해놓는 파일
+ 	- pom.xml : 메이븐 프로젝트에서 사용하는 설정 파일. 메이븐은 프로젝트를 자동으로 관리하는 도구
  	
  	
  	
