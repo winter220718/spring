@@ -10,12 +10,28 @@
 		</layout>
 	</appender>
 	
+	<!-- File Appender 선언 -->
+	<appender name="logfile" class="org.apache.log4j.FileAppender">
+		<param name="file" value="/log/logfile.txt"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%-5p: %c - %m%n" />
+		</layout>
+	</appender>
+	
+		<!-- File Appender2 (html layout)-->
+	<appender name="logfile_html" class="org.apache.log4j.FileAppender">
+		<param name="file" value="/log/logfile_html.html"/>
+		<layout class="org.apache.log4j.HTMLLayout"/>
+	
+	</appender>
+	
+	
 	<!-- Application Loggers -->
 	<logger name="com.ezen.springmvc">
 		<level value="info" />
 	</logger>
 	
-	<!-- 3rdparty Loggers -->
+	<!-- 3rdparty(spring) Loggers -->
 	<logger name="org.springframework.core">
 		<level value="info" />
 	</logger>
@@ -36,6 +52,8 @@
 	<root>
 		<priority value="warn" />
 		<appender-ref ref="console" />
+		<appender-ref ref="logfile" />
+		<appender-ref ref="logfile_html" />
 	</root>
 	
 </log4j:configuration>

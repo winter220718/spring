@@ -27,10 +27,19 @@
   @Before
   
    - 해당 메서드가 테스트 시작 전 실행된다
-   - 
+   - 테스트 전에 초기화, 접속 등의 작업을 먼저 수행하는 역할
    
   @After
    
-   - 해당 메서드가 테스트 
+   - 해당 메서드가 테스트 종료 후 실행된다 
    
+  # JUnit Asserts
+  
+   - assertEquals(e,a) : 두 값이 일치하면 테스트 통과
+   - assertTrue(a) : 결과가 true면 테스트 통과
+   - assertFalse(a) : 결과가 false면 테스트 통과
+   - assertNull(a) : 결과가 null이면 테스트 통과
+   - assertNotNull(a) : 결과가 null이 아니면 테스트 통과
+   - assertThrows(e, a) : 전달한 람다 실행 도중 원하는 예외가 발생하면 테스트 통과
+   - fail() : fail을 만나면 테스트 실패 (테스트 내에서 return같은 역할)
    
