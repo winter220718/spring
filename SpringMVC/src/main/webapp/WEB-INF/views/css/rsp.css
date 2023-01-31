@@ -1,0 +1,9 @@
+@CHARSET "UTF-8";
+
+.rsp {
+	border: 1px;
+	background-color: black;
+	color: white;
+	font-size: 15px;
+	width: 100px;
+}	

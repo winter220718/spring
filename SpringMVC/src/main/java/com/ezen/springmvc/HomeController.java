@@ -36,5 +36,8 @@ public class HomeController {
 		
 		return "home"; // WEB-INF/views/ + home + .jsp´Ù
 	}
+
+
+	
 	
 }

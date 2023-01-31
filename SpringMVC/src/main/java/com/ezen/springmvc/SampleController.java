@@ -46,7 +46,7 @@ public class SampleController {
 	@PostMapping("/sample/post2")
 	public String post2(Employee emp) {
 		
-		log.info(emp);
+//		log.info(emp);
 		return "sample/result";
 				
 	}
@@ -57,16 +57,16 @@ public class SampleController {
 	         @ModelAttribute("first_name") String f_name, 
 	         @ModelAttribute("last_name") String l_name) {
 	      
-	      log.info(emp_id);
-	      log.info(f_name);
-	      log.info(l_name);
+//	      log.info(emp_id);
+//	      log.info(f_name);
+//	      log.info(l_name);
 	      
 	      return "sample/result";
 	   }
 	
 	@GetMapping("/sample/find/void")
 	public void orange(Employee e) {
-		log.info(e);
+//		log.info(e);
 		
 		
 	}
