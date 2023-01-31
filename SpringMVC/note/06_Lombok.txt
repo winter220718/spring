@@ -9,3 +9,39 @@
    3. 실행 후 원하는 IDE 위치 선택
    5. pom.xml에 의존성 등록
    6. IDE 껐다키기
+   
+  # Lombok의 어노테이션들
+  
+  @Getter
+   - 클래스 위에 사용하면 모든 필드에 대해 Getter를 생성해주는 어노테이션
+   - 특정 필드에만 Getter를 생성하는 것도 가능하다
+  
+  @Setter
+   - 클래스 위에 사용하면 모든 필드에 대해 Setter를 생성해주는 어노테이션
+   - 특정 필드에만 Setter를 생성하는 것도 가능하다
+   
+  @ToString
+   - 해당 클래스의 toString()을 구현해줌
+   
+  @NoArgsConstructor
+   - 기본 생성자(args가 없는)를 자동으로 생성해줌
+  
+  @RequiredArgsConstructor
+   - 필수로 채워야 하는(@NotNull) 필드가 포함된 생성자를 자동으로 생성
+   
+  @AllArgsConstructor
+   - 모든 필드를 포함한 생성자를 자동으로 생성 
+ 
+  @EqualsAndHashCode
+   - 해당 클래스의 equals()와 hashCode()를 적당히 생성
+   - equals()는 모든 필드의 값이 일치하면 같은것으로 판정
+   - hashCode()는 모든 필드의 값이 같다면 항상 같은 값을 얻어내는 용도
+   
+  
+  @Data
+  
+   @Getter
+   @Setter
+   @ToSTring
+   @EqqualsAndHashCode
+   @RequiredArgsConstructor를 합친 어노테이션
